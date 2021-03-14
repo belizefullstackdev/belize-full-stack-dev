@@ -1,13 +1,14 @@
 
 import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Yow</h1>
-      </header>
-    </div>
+    <Router>
+      <Home />
+    </Router>
+
   );
 }
 
