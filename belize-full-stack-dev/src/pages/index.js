@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+import Belizedev from '../components/Belizedev';
+import Infosection from '../components/InfoSection';
+import { homeObjOne } from '../components/InfoSection/Data';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-import Belizedev from '../components/Belizedev';
+
+
+
+
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +19,9 @@ const Home = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <Belizedev toggle={toggle} />
+            <Belizedev />
+            <Infosection {...homeObjOne} />
+
         </>
     )
 }
